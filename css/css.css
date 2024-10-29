@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.div-logo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.perfil {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.rosto {
+    border-radius: 50%;
+
+    width: 120px;
+    height: 120px;
+}
+
+.images {
+    margin-top: 30px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.celulares {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+
+}
+
+.botao-continue {
+    background-color: #1399e5;
+    border: 1px solid #1399e5;
+    width: 250px;
+    height: 40px;
+    margin: 30px auto;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-continue:hover {
+    background-color: #117ec2;
+}
+
+.continuar {
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    max-width: 550px;
+    border: 2px solid #ececec;
+    padding: 20px;
+}
+
+.link {
+    color: #1399e5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.inscreva {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 550px;
+    background-color: white;
+    padding: 10px 0;
+    border: 2px solid #ececec;
+}
+
+.texto {
+    color: #b9b9bc;
+}
+
+.baixar {
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.play {
+    display: flex;
+    justify-content: center;
+}
+
+.disponivel {
+    width: 200px;
+    height: auto;
+    margin-left: 10px;
+}
+
+@media (max-width: 912px) {
+    .images {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+
+    .login {
+        margin-top: 100px;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
